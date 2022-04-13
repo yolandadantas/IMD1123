@@ -1,4 +1,4 @@
-A. Mashkoor, T. Menzies, A. Egyed and R. Ramler, "Artificial Intelligence and Software Engineering: Are We Ready?," in Computer, vol. 55, no. 3, pp. 24-28, March 2022, doi: 10.1109/MC.2022.3144805.
+## A. Mashkoor, T. Menzies, A. Egyed and R. Ramler, "Artificial Intelligence and Software Engineering: Are We Ready?," in Computer, vol. 55, no. 3, pp. 24-28, March 2022, doi: 10.1109/MC.2022.3144805.
 
 Venho apresentar o artigo "Artificial Intelligence and Software Engineering: Are We Ready?”, que consiste numa introdução feita pelos editores convidados do jornal *Computer* para a respectiva edição de março. 
 
