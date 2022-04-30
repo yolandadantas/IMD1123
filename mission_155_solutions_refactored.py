@@ -120,9 +120,9 @@ def knn_train_test_2(train_col, target_col, _df):
     k_values = [1, 3, 5, 7, 9]
     k_rmses = {}
 
-    for k in k_values:
+    for k_value in k_values:
         # Fit model using k nearest neighbors.
-        knn = KNeighborsRegressor(n_neighbors=k)
+        knn = KNeighborsRegressor(n_neighbors=k_value)
         knn.fit(train_df[[train_col]], train_df[target_col])
 
         # Make predictions using model.
@@ -132,7 +132,7 @@ def knn_train_test_2(train_col, target_col, _df):
         mse = mean_squared_error(test_df[target_col], predicted_labels)
         rmse = np.sqrt(mse)
 
-        k_rmses[k] = rmse
+        k_rmses[k_value] = rmse
     return k_rmses
 
 
@@ -169,7 +169,7 @@ print(sorted_series_avg_rmse)
 sorted_features = sorted_series_avg_rmse.index
 
 
-def knn_train_test_3(train_cols, target_col, _df):
+def knn_train_test_3(train_cols_3, target_col, _df):
     """roda o knn test usando valor de k padrao e retorna o RMSE"""
     np.random.seed(1)
 
@@ -188,19 +188,19 @@ def knn_train_test_3(train_cols, target_col, _df):
     k_values = [5]
     k_rmses = {}
 
-    for k in k_values:
+    for k_value in k_values:
         # Fit model using k nearest neighbors.
-        knn = KNeighborsRegressor(n_neighbors=k)
-        knn.fit(train_df[train_cols], train_df[target_col])
+        knn = KNeighborsRegressor(n_neighbors=k_value)
+        knn.fit(train_df[train_cols_3], train_df[target_col])
 
         # Make predictions using model.
-        predicted_labels = knn.predict(test_df[train_cols])
+        predicted_labels = knn.predict(test_df[train_cols_3])
 
         # Calculate and return RMSE.
         mse = mean_squared_error(test_df[target_col], predicted_labels)
         rmse = np.sqrt(mse)
 
-        k_rmses[k] = rmse
+        k_rmses[k_value] = rmse
     return k_rmses
 
 
@@ -215,7 +215,7 @@ for nr_best_feats in range(2, 7):
 
 print(k_rmse_results)
 
-def knn_train_test_4(train_cols, target_col, _df):
+def knn_train_test_4(train_cols_4, target_col, _df):
     """roda o knn test usando valor de k padrao e retorna o RMSE"""
     np.random.seed(1)
     # Randomize order of rows in data frame.
@@ -231,19 +231,19 @@ def knn_train_test_4(train_cols, target_col, _df):
     k_values = list(range(1, 25))
     k_rmses = {}
 
-    for k in k_values:
+    for k_value in k_values:
         # Fit model using k nearest neighbors.
-        knn = KNeighborsRegressor(n_neighbors=k)
-        knn.fit(train_df[train_cols], train_df[target_col])
+        knn = KNeighborsRegressor(n_neighbors=k_value)
+        knn.fit(train_df[train_cols_4], train_df[target_col])
 
         # Make predictions using model.
-        predicted_labels = knn.predict(test_df[train_cols])
+        predicted_labels = knn.predict(test_df[train_cols_4])
 
         # Calculate and return RMSE.
         mse = mean_squared_error(test_df[target_col], predicted_labels)
         rmse = np.sqrt(mse)
 
-        k_rmses[k] = rmse
+        k_rmses[k_value] = rmse
     return k_rmses
 
 
