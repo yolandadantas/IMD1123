@@ -58,7 +58,7 @@ numeric_cars['price'] = price_col
 
 
 def knn_train_test_1(train_col, target_col, _df):
-    """roda o knn test usando valor de k padrao e retorna o RMSE"""
+    """Run KNN test using the default k value and return the RMSE"""
     knn = KNeighborsRegressor()
     np.random.seed(1)
 
@@ -102,7 +102,7 @@ rmse_results_series.sort_values()
 
 
 def knn_train_test_2(train_col, target_col, _df):
-    """roda o knn test usando valor de k padrao e retorna o RMSE"""
+    """Run KNN test using different k values and return the RMSE"""
     np.random.seed(1)
 
     # Randomize order of rows in data frame.
@@ -170,7 +170,7 @@ sorted_features = sorted_series_avg_rmse.index
 
 
 def knn_train_test_3(train_cols_3, target_col, _df):
-    """roda o knn test usando valor de k padrao e retorna o RMSE"""
+    """Run KNN test using 5 as k value and return the RMSE"""
     np.random.seed(1)
 
     # Randomize order of rows in data frame.
@@ -216,7 +216,7 @@ for nr_best_feats in range(2, 7):
 print(k_rmse_results)
 
 def knn_train_test_4(train_cols_4, target_col, _df):
-    """roda o knn test usando valor de k padrao e retorna o RMSE"""
+    """Run KNN test using different k values and return the RMSE"""
     np.random.seed(1)
     # Randomize order of rows in data frame.
     shuffled_index = np.random.permutation(_df.index)
