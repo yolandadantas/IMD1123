@@ -1,6 +1,6 @@
 # Visualização dos preços da gasolina brasileira entre 2004 e 2021
 
-Projeto da disciplina de MLOps da UFRN que tem como objetivo principal colocar em prática o conteúdo referente a Semana 04 da matéria, focado nos princípios de visualização de dados, escrita limpa, documentação, refatoração e análise da qualidade do código através de ferramentas
+Projeto da disciplina de MLOps da UFRN, em parceria com [Matheus Silva](https://github.com/matheusriv) que tem como objetivo principal colocar em prática o conteúdo referente a Semana 04 da matéria, focado nos princípios de visualização de dados, escrita limpa, documentação, refatoração e análise da qualidade do código através de ferramentas
 
 ## Requisitos
 
