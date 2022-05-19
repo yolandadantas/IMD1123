@@ -1,5 +1,5 @@
 """
-Autores: Matheus Silva e Yolanda Dantas
+Autor: Matheus Silva e Yolanda Dantas
 Data: Maio 2022
 Este projeto constrói uma aplicação
 streamlit para visualização de dados
