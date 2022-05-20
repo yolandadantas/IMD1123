@@ -24,12 +24,12 @@ Para começar a usar este projeto, basta clonar o repositório:
 
 Opção HTTP:
 ```
-git clone https://github.com/matheusriv/mlops_2022.1.git
+git clone https://github.com/yolandadantas/IMD1123.git
 ```
 
 Opção SSH:
 ```
-git clone git@github.com:matheusriv/mlops_2022.1.git
+git clone git@github.com:yolandadantas/IMD1123.git
 ```
 
 ## 💻 Etapas do Projeto
